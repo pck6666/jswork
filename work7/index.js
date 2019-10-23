@@ -6,7 +6,8 @@ function sort(method){
     //根据传入排序的方法调用不同的排序函数
     if(method=='bubble'){
         //调用bubbleSort（）冒泡排序函数获取的排序结果
-        logs = bubbleSort(origin)
+        logs = insertSort(origin)
+        // logs = bubbleSort(origin)
     }else if(method=='insert'){
         //调用insertSort（）冒泡排序函数获取的排序结果
         logs = insertSort(origin)
@@ -14,5 +15,7 @@ function sort(method){
     //获取显示冒泡排序的div
     showDiv = document.getElementById('Anim')
     //显示排序后的结果
+    console.log(origin)
+    console.log(logs)
     showDiv.innerHTML = logs
 }

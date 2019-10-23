@@ -3,9 +3,12 @@ function bubbleSort(str){
     //把字符串切分成数组
     let arr = str.split(',')
     //比较轮数，数组有多少个数字，就比较数组长度-1轮
-    for(let i = 0; i < arr.lenght - 1; i++){
-        for(let j = 0; j<arr.lenght - i - 1; j++){
+    for(let i = 0; i < arr.length - 1; i++){
+        //从第一个数开始比较相邻的两个数值
+        for(let j = 0; j<arr.length - i - 1; j++){
+            //比较相邻的两个元素，如果左边的大，就把大的数交换到右边
             if(arr[j] > arr[j + 1]){
+                //使用解构赋值的方法，把两个元素交换位置
                 [arr[j],arr[j + 1]] = [arr[j + 1],arr[j]]
             }
         }
@@ -15,7 +18,7 @@ function bubbleSort(str){
 //插入排序
 function insertSort(str){
     let arr = str.split(',')
-    for(let i = 1; i < arr.lenght; i++){
+    for(let i = 1; i < arr.length; i++){
         for(let j = i; j>0; j--){
             if(arr[j - 1] > arr[j]){
                 [arr[j - 1],arr[j]] = [arr[j],arr[j - 1]]
