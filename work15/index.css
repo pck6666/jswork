@@ -110,9 +110,7 @@
     color: #FF3334;
     font-weight: bold;
     font-size: 16px;
-}
-
-.cart-bottom-btn{
+}.cart-bottom-btn{
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
@@ -123,7 +121,6 @@
     border-radius: 5px 5px 5px 5px;
     padding: 6px 12px;
 }
-
 .cart-bottom-btn:hover{
     background: #FF6600;
 }
